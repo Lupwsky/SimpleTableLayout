@@ -25,9 +25,9 @@ android {
     }
 
     // 项目主页，需要修改
-    def siteUrl = 'https://github.com/Lupwsky/SimpleTableView'
+    def siteUrl = 'https://github.com/Lupwsky/SimpleTableLayout'
     // 项目的git地址（必须是git地址，可以不存在），需要修改
-    def gitUrl = 'https://github.com/Lupwsky/SimpleTableView.git'
+    def gitUrl = 'https://github.com/Lupwsky/SimpleTableLayout.git'
     // 上传到 Bintray 的库名称（刚才创建的名称），需要修改
     def libName = "SimpleTableView"
     // 这两个参数配置是为了最终生成 compile 'com.xxx:xxxx:1.0.0'  group  version 是关键字，自动识别的，需要修改
