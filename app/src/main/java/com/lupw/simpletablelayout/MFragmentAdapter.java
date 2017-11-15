@@ -2,7 +2,7 @@ package com.lupw.simpletablelayout;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import java.util.List;
  * Admin Lupw
  */
 
-public class MFragmentAdapter extends FragmentPagerAdapter{
+public class MFragmentAdapter extends FragmentStatePagerAdapter {
     private List<Fragment> dataList;
 
     public MFragmentAdapter(FragmentManager fm, List<Fragment> dataList) {

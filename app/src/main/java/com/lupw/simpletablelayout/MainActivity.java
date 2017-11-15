@@ -3,10 +3,6 @@ package com.lupw.simpletablelayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.HorizontalScrollView;
-import com.lupw.tablelayout.view.TableView;
 import com.lupw.tablelayout.view.VPTopTableView;
 
 import java.util.ArrayList;
