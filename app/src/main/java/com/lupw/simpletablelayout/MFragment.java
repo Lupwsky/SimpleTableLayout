@@ -25,8 +25,9 @@ public class MFragment extends LazyFragment {
     private RecyRightAdapter rightAdapter;
     private LinearLayoutManager leftLayoutManager;
     private LinearLayoutManager rightLayoutManager;
-    private int currentPosition = 0, lastPosition = 0;
-    private boolean isScrollByClick = false;
+    private int currentPosition = 0, lastPosition = 0;  // 右侧RecyclerView当前第一个可见的Item的位置和最后一次记录的Item的位置
+    private boolean isScrollByClick = false;  // 是否是由于点击左边RecyclerView而引起的右边RecyclerView的滚动
+
 
     public static MFragment getInstance(String title) {
         MFragment mFragment = new MFragment();
@@ -224,7 +225,7 @@ public class MFragment extends LazyFragment {
                             LeftBean leftBean = leftDataList.get(i);
                             if (leftBean.getId().equals(rightBean.getId())) {
                                 Log.e("SCROLL", rightBean.getId());
-                                leftRecycler.smoothScrollToPosition(i);
+                                leftRecycler.scrollToPosition(i);
 
                                 LeftBean leftBean2 = leftDataList.get(i);
                                 for (LeftBean leftBean1 : leftDataList) {
